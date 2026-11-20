@@ -1,0 +1,57 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dataset files and generated data (keep folder structure with .gitkeep if needed)
+/data/raw/**
+/data/processed/**
+/data/corpus/**
+!/data/raw/.gitkeep
+!/data/processed/.gitkeep
+!/data/corpus/.gitkeep
+
+# Model weights and checkpoints
+/models/checkpoints/**
+*.pt
+*.pth
+*.ckpt
+*.onnx
+!/models/checkpoints/.gitkeep
+
+# Generated reports and experiment artifacts
+/reports/figures/**
+/reports/metrics/**
+!/reports/figures/.gitkeep
+!/reports/metrics/.gitkeep
+*.log
+lightning_logs/
+mlruns/
+wandb/
+
+# Local databases and uploaded images
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
